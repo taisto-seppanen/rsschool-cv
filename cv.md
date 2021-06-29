@@ -1,0 +1,41 @@
+# Seppanen Taisto
+
+### Contacts:
+
+- Telegram: [@taisto_seppanen](https://t.me/taisto_seppanen "@taisto_seppanen")
+- E-mail: taistopetrseppanen@gmail.com
+
+### About me
+
+I am a junior software developer from the Republic of Karelia,
+Russia. I love creating code and do not afraid of any obstacles on
+my educational path. Also, I can easily find all necessary
+information and apply it for tasks of different complexity. New
+technologies don't frighten me, but inspire.
+My aim is to become experienced professional, who is able to solve
+any issue in a unique and quality manner.
+
+### Skills
+
+- QA & Testing
+- Java Core
+- HTML
+- CSS
+- JavaScript
+- Git
+- Vue.js
+- Nuxt.js
+- Bootstrap
+
+### Education
+
+- 2013 - State Independent Vocational Intitution of Secondary
+  Vocational Education of the Republic of Karelia "Motor Transport
+  Secondary Technical School" in Petrozavodsk
+- 2018 - The Russian Presidential Academy of National Economy and
+  Public Administration under the President of the Russian Federation:
+  Economics and Finance Faculty.
+
+### English
+
+My english level is A2, but I can easily read documentation and technical literature.
