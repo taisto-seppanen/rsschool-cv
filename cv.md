@@ -27,6 +27,33 @@ any issue in a unique and quality manner.
 - Nuxt.js
 - Bootstrap
 
+### Code examples
+
+    import firebase from "firebase/app";
+
+    export async function setNewFilm(newfilm) {
+      await firebase
+        .database()
+        .ref("films/")
+        .set({ newfilm });
+    }
+
+    export async function getFilms() {
+      let filmsArr = [];
+      await firebase
+        .database()
+        .ref("films/")
+        .get()
+        .then(snapshot => {
+          if (snapshot.exists()) {
+            filmsArr = snapshot.val().newfilm;
+          } else {
+            console.warn("bad request");
+          }
+        });
+      return filmsArr;
+    }
+
 ### Education
 
 - 2013 - State Independent Vocational Intitution of Secondary
