@@ -54,6 +54,15 @@ any issue in a unique and quality manner.
       return filmsArr;
     }
 
+### Experience
+
+Now i'm working as QA engineer in [Roskavral company](https://roskvartal.ru/o-kompanii)
+
+In 2021 i was complete advanced training courses of modern web development.
+
+- Sipmle [snake game](https://taisto-seppanen.github.io/Snake/ "Snake Game")
+- Trainee website for [cinema booking](https://cinimabooking.herokuapp.com/ "cinema booking") with admin page (/login) and database at Firebase
+
 ### Education
 
 - 2013 - State Independent Vocational Intitution of Secondary
