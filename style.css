@@ -1,0 +1,58 @@
+body {
+  background-color: rgb(215, 179, 119);
+  padding: 0;
+  margin: 0;
+}
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: rgb(143, 117, 79);
+}
+nav ul,
+.contact {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(245, 240, 246);
+  border-radius: 10px;
+}
+.card-item {
+  width: 45%;
+  padding: 10px;
+}
+@media (max-width: 760px) {
+  .card {
+    flex-direction: column;
+    margin: 0;
+    margin-top: 20px;
+  }
+  .card-item {
+    width: 100%;
+    padding: 10px;
+  }
+  nav ul {
+    display: none;
+  }
+}
+h1 {
+  text-align: center;
+}
+img {
+  width: 100%;
+  border-radius: 50%;
+}
+.icon {
+  width: 30px;
+}
