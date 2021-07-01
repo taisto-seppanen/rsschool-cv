@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#examples">Code examples</a></li>
+          <li><a href="#Experience">Experience</a></li>
+          <li><a href="#Education">Education</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="card">
+        <div class="card-item">
+          <h1>Taisto Seppanen</h1>
+          <h2 id="about">About me</h2>
+          <p>
+            I am a junior software developer from the Republic of Karelia,
+            Russia. I love creating code and do not afraid of any obstacles on
+            my educational path. Also, I can easily find all necessary
+            information and apply it for tasks of different complexity. New
+            technologies don't frighten me, but inspire. My aim is to become
+            experienced professional, who is able to solve any issue in a unique
+            and quality manner.
+          </p>
+
+          <ul class="contact" id="contacts">
+            <li>
+              <a href="https://t.me/taisto_seppanen" target="_blank"
+                ><img
+                  class="icon"
+                  src="./icons8-telegram-app-48.png"
+                  alt="Telegram"
+                  title="Telegram"
+              /></a>
+            </li>
+
+            <li>
+              <a href="mailto:taistopetrseppanen@gmail.com" target="_blank"
+                ><img
+                  class="icon"
+                  src="./icons8-mail-48.png"
+                  alt="E-mail"
+                  title="E-mail"
+              /></a>
+            </li>
+
+            <li>
+              <a href="https://github.com/taisto-seppanen" target="_blank"
+                ><img
+                  class="icon"
+                  src="./icons8-github-48.png"
+                  alt="git"
+                  title="git"
+              /></a>
+            </li>
+
+            <li>
+              <a
+                href="https://join.skype.com/invite/ke7DzVJXtVR7"
+                target="_blank"
+                ><img
+                  class="icon"
+                  src="./icons8-skype-48.png"
+                  alt="skype"
+                  title="Skype"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-item">
+          <img src="./photo.jpg" alt="taisto" />
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-item">
+          <h2 id="Skills">Skills</h2>
+
+          <ul>
+            <li>QA & Testing</li>
+            <li>Java Core</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Git</li>
+            <li>Vue.js</li>
+            <li>Nuxt.js</li>
+            <li>Bootstrap</li>
+            <li>English - A2</li>
+          </ul>
+        </div>
+        <div class="card-item">
+          <h2 id="examples">Code examples</h2>
+          <pre class="code">
+
+import firebase from "firebase/app";
+
+export async function setNewFilm(newfilm) {
+  await firebase
+    .database()
+    .ref("films/")
+    .set({ newfilm });
+    }
+
+export async function getFilms() {
+  let filmsArr = [];
+
+  await firebase
+    .database()
+    .ref("films/")
+    .get()
+    .then(snapshot => {
+      if (snapshot.exists()) {
+        filmsArr = snapshot.val().newfilm;
+      } else {
+        console.warn("bad request");
+      }
+    });
+  return filmsArr;
+}
+            </pre
+          >
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-item">
+          <h2 id="Education">Education</h2>
+          <ul>
+            <li>
+              - 2013 - State Independent Vocational Intitution of Secondary
+              Vocational Education of the Republic of Karelia "Motor Transport
+              Secondary Technical School" in Petrozavodsk
+            </li>
+            <li>
+              - 2018 - The Russian Presidential Academy of National Economy and
+              Public Administration under the President of the Russian
+              Federation: Economics and Finance Faculty.
+            </li>
+          </ul>
+        </div>
+        <div class="card-item">
+          <h2 id="Experience">Experience</h2>
+
+          <p>
+            Now i'm working as QA engineer in
+            <a href="https://roskvartal.ru/o-kompanii" target="_blank"
+              >Roskavral company</a
+            >
+          </p>
+          <p>
+            In 2021 i completed advanced training courses of modern web
+            development.
+          </p>
+          <p>
+            Sipmle
+            <a href="https://taisto-seppanen.github.io/Snake/" target="_blank"
+              >Snake Game</a
+            >
+          </p>
+          <p>
+            Trainee website for
+            <a href="https://cinimabooking.herokuapp.com/" target="_blank"
+              >cinema booking</a
+            >
+            with admin page (/login) and database at Firebase
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
